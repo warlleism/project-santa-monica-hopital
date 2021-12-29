@@ -62,7 +62,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 40%;
+  width: 50%;
 }
 
 .header-list-itens ul > li {
@@ -300,6 +300,17 @@ p {
   font-size: 1.3rem;
 }
 
+.diracao {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.diracao img{
+  max-width: 40px;
+}
+
 
 
 @media screen and (max-width: 1050px) {
@@ -310,8 +321,14 @@ p {
   .header-list-itens img {
     width: 15%;
     max-width: 200px;
-    margin-right: 100px;
+    margin-left: 40px;
   }
+
+  
+#slider img {
+  width: 100vw;
+}
+
 }
 
 @media screen and (max-width: 654px) {
