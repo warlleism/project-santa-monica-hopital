@@ -94,6 +94,7 @@ header {
   flex-direction: center;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #slider {
@@ -131,11 +132,11 @@ body {
   transition: 2s;
 }
 
-.info h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.info > h1{
+  font-size: 2rem;
   color: #74891d;
 }
+
 
 .info p {
   color: rgb(79, 79, 79);
@@ -180,17 +181,14 @@ p {
 
 .box-info-comunicados > .comunicados-box-1 {
   padding: 20px;
-  max-width: 30%;
   margin-right: 20px;
 }
 .box-info-comunicados > .comunicados-box-2 {
   padding: 20px;
-  max-width: 30%;
 }
 
 .box-info-comunicados > .comunicados-box-3 {
   padding: 30px;
-  max-width: 36%;
   margin-left: 20px;
   background-color: #91c421;
   border-radius: 5px;
@@ -199,7 +197,7 @@ p {
 }
 
 .box-info-comunicados img {
-  max-width: 100%;
+  width: 100%;
 }
 
 [data-anime] {
@@ -230,20 +228,20 @@ p {
 }
 
 .content-info {
-  padding: 50px;
+  padding: 5px 0px 0px 40px;
 }
 
 .content-info h1 {
   font-size: 3rem;
   font-weight: 900;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   color: #74891d;
 }
 
 .content-info h3 {
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   color: #91c522;
 }
 
@@ -264,7 +262,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
+}
+
+.unidades h1{
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #74891d;
 }
 .unidades ul {
   display: flex;
@@ -292,10 +298,10 @@ p {
   margin-bottom: 30px;
 }
 
-.unidades a{
+.unidades a {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  color:#74891D;
+  color: #74891d;
   font-weight: 700;
   font-size: 1.3rem;
 }
@@ -306,29 +312,134 @@ p {
   justify-content: center;
 }
 
-
-.diracao img{
+.diracao img {
   max-width: 40px;
 }
 
-
-
 @media screen and (max-width: 1050px) {
+
+  .header-list-itens {
+    width: 77vh;
+  }
+
+
+  .welcome-body-content {
+    width: 77vh;
+  }
+
+ 
   .header-list-itens ul {
     display: none;
   }
 
   .header-list-itens img {
-    width: 15%;
+    width: 30%;
     max-width: 200px;
-    margin-left: 40px;
+  }
+
+  #slider img {
+    width: 77vh;
+  }
+
+  .imagem-building {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .imagem-building img {
+    width: 70%;
+  }
+
+  .welcome-body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .diracao {
+    width: 77vh;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 77vh;
+    margin: 50px 0px 0px 0px;
   }
 
   
-#slider img {
-  width: 100vw;
-}
+  .info > h1 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-left: 16px;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
 
+  .info > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77vw;
+    
+  }
+
+  .unidades {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77vh;
+  }
+
+  .unidades ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .unidades li {
+    align-items: center;
+    padding: 80px;
+  }
+
+  
+  .box-info-comunicados {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .box-info-comunicados img{
+    width: 360px;
+  }
+
+  .box-info-comunicados > .comunicados-box-1 {
+    width: 70vw;
+  }
+
+  .box-info-comunicados > .comunicados-box-2 {
+    width: 70vw;
+  }
+
+  .box-info-comunicados > .comunicados-box-3 {
+    width: 60vw;
+  }
 }
 
 @media screen and (max-width: 654px) {
@@ -336,21 +447,6 @@ p {
     display: none;
   }
 
-  .header-list-itens {
-    width: 63vh;
-  }
 
-  .header-list-itens img {
-    width: 30%;
-    max-width: 200px;
-    margin-left: 138px;
-  }
 
-  .header-list-itens ul {
-    display: none;
-  }
-
-  #slider img {
-    width: 77vh;
-  }
 }
