@@ -25,7 +25,9 @@ let time = 3000;
 
 currentImageIndex = 0;
 
-imagens = document.querySelectorAll("#slider img")
+imagens = document.querySelectorAll("#slider div")
+
+console.log(imagens)
 
 max = imagens.length
 
@@ -52,7 +54,7 @@ function start(){
 
 function ScrollAnimate(){ 
   window.scrollTo({
-    top: 900,
+    top: 930,
     behavior: 'smooth'
   });
 }
