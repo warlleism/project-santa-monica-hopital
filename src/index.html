@@ -9,25 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 
 <section class="header-top">
 
+
+    <div class="bloco-green"></div>
+    <div class="bloco-blue"></div>
+
     <section class="header-info-top-1">
         <div class="header-info-top">
-
-            <span><img src="\assets\icons\pin.png" alt="localização"> Rodovia do Sol, Km 01- Praia de Itaparica - Vila
-                Velha/ES</span>
-            <a href=""><span><img src="\assets\icons\phone.png" alt="telefone">(27) 3320.3500</span></a>
-
+            <span style="display: flex; align-items: center; font-weight: 400;"><span
+                    class="material-symbols-outlined">location_on</span> Rodovia do Sol, Km 01- Praia de Itaparica -
+                Vila Velha / ES</span>
+            <a style="display: flex; align-items: center; font-weight: 400;"><span
+                    class="material-symbols-outlined">call</span>(27) 3320-3500</a>
         </div>
 
         <div class="header-info-top">
             <a href=""><span><img src="\assets\icons\facebook.png" alt=""></span></a>
             <a href=""><span><img src="\assets\icons\instagram.png" alt=""></span></a>
         </div>
+
     </section>
 
 </section>
@@ -55,12 +64,15 @@
     <div id="slider">
         <img class="selected" src="\assets\img\img1.png" alt="">
         <img src="\assets\img\img2.png" alt="">
+        <img src="\assets\img\img3.png" alt="">
     </div>
 
 </section>
 
-<div class="diracao">
-    <img src="/assets/icons/seta-para-baixo.png" alt="">
+<div class="direcao" onclick="ScrollAnimate()">
+    <span class="material-symbols-outlined">
+        expand_more
+    </span>
 </div>
 
 <body>
@@ -92,7 +104,7 @@
         <div class="box-info-comunicados">
 
             <div class="comunicados-box-1">
-                
+
                 <img src="\assets\img\comunicado.jpg" alt="">
                 <h4>COMUNICADO: TENTATIVA DE GOLPE</h4>
                 <p>O Hospital Santa Mônica não realiza contato por telefone para efetuar cobranças de quaisquer tipos de
@@ -123,29 +135,29 @@
 
     </section>
 
- 
+
 
     <section class="unidades" data-anime="top">
 
         <h1>Unidades</h1>
 
         <ul>
-            <li><img src="\assets\unidades\a1.png"alt=""> <a href="">Cardiologia</a></li>
-            <li><img src="\assets\unidades\a2.png"alt=""> <a href="">Pediatria</a></li>
-            <li><img src="\assets\unidades\a3.png"alt=""> <a href="">Hemodinâmica</a></li>
-            <li><img src="\assets\unidades\a4.png"alt=""> <a href="">Mamografia</a></li>
-            <li><img src="\assets\unidades\a5.png"alt=""> <a href="">Maternidade</a></li>
-            <li><img src="\assets\unidades\a6.png"alt=""> <a href="">Oftalmologia</a></li>
-            <li><img src="\assets\unidades\a7.png"alt=""> <a href="">Ortopedia</a></li>
-            <li><img src="\assets\unidades\a8.png"alt=""> <a href="">PS da Mulher</a></li>
-            <li><img src="\assets\unidades\a9.png"alt=""> <a href="">Endoscopia</a></li>
-            <li><img src="\assets\unidades\a10.png"alt=""> <a href="">Diagnóstico por Imagem</a></li>
-            <li><img src="\assets\unidades\a11.png"alt=""> <a href="">Serviços Laboratoriais</a></li>
-            <li><img src="\assets\unidades\a12.png"alt=""> <a href="">Oncologia</a></li>
-            <li><img src="\assets\unidades\a13.png"alt=""> <a href="">Unidade de Internação</a></li>
-            <li><img src="\assets\unidades\a14.png"alt=""> <a href="">Terapia Intensiva Neonatal</a></li>
-            <li><img src="\assets\unidades\a15.png"alt=""> <a href="">UTI</a></li>
-            <li><img src="\assets\unidades\a16.png"alt=""> <a href="">Ultrapassonografia</a></li>
+            <li><img src="\assets\unidades\a1.png" alt=""> <a href="">Cardiologia</a></li>
+            <li><img src="\assets\unidades\a2.png" alt=""> <a href="">Pediatria</a></li>
+            <li><img src="\assets\unidades\a3.png" alt=""> <a href="">Hemodinâmica</a></li>
+            <li><img src="\assets\unidades\a4.png" alt=""> <a href="">Mamografia</a></li>
+            <li><img src="\assets\unidades\a5.png" alt=""> <a href="">Maternidade</a></li>
+            <li><img src="\assets\unidades\a6.png" alt=""> <a href="">Oftalmologia</a></li>
+            <li><img src="\assets\unidades\a7.png" alt=""> <a href="">Ortopedia</a></li>
+            <li><img src="\assets\unidades\a8.png" alt=""> <a href="">PS da Mulher</a></li>
+            <li><img src="\assets\unidades\a9.png" alt=""> <a href="">Endoscopia</a></li>
+            <li><img src="\assets\unidades\a10.png" alt=""> <a href="">Diagnóstico por Imagem</a></li>
+            <li><img src="\assets\unidades\a11.png" alt=""> <a href="">Serviços Laboratoriais</a></li>
+            <li><img src="\assets\unidades\a12.png" alt=""> <a href="">Oncologia</a></li>
+            <li><img src="\assets\unidades\a13.png" alt=""> <a href="">Unidade de Internação</a></li>
+            <li><img src="\assets\unidades\a14.png" alt=""> <a href="">Terapia Intensiva Neonatal</a></li>
+            <li><img src="\assets\unidades\a15.png" alt=""> <a href="">UTI</a></li>
+            <li><img src="\assets\unidades\a16.png" alt=""> <a href="">Ultrapassonografia</a></li>
         </ul>
     </section>
 

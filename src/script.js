@@ -21,9 +21,7 @@ window.addEventListener('scroll', function(){
 })
 
 
-
-
-let time = 2000;
+let time = 3000;
 
 currentImageIndex = 0;
 
@@ -49,6 +47,14 @@ function start(){
   setInterval(()=> {
     nextImage()
   },time)
+}
+
+
+function ScrollAnimate(){ 
+  window.scrollTo({
+    top: 900,
+    behavior: 'smooth'
+  });
 }
 
 window.addEventListener("load", start)
